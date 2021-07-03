@@ -5,8 +5,13 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
 app.get("/", (req, res) => {
-  res.json({ message: "Docker is not easy" });
+  res.json({ message: "Docker is veasdfadsfadsfdfy easy" });
+});
+
+app.get("/user", (req, res) => {
+  res.json({ email: "hartantoaanan@gmail.com", password: "password" });
 });
 
 app.listen(PORT, () => {
