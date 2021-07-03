@@ -1,0 +1,10 @@
+version: "3"
+services:
+  dockerify-app:
+    container_name: dockerify-app
+    build: .
+    volumes:
+      - .:/app
+    restart: unless-stopped
+    ports:
+      - 4000:4000
