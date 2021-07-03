@@ -7,11 +7,18 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.json({ message: "Docker is veasdfadsfadsfdfy easy" });
+  res.json({ message: "Docker is not easy" });
 });
 
 app.get("/user", (req, res) => {
-  res.json({ email: "hartantoaanan@gmail.com", password: "password" });
+  res.json({ email: "hartantoaanan@gmail.com", password: "iloveyou" });
+});
+
+app.get("/finally", (req, res) => {
+  res.json({
+    message:
+      "it is work just simply add --legacy-watch or -L in npm script nodemon, tf maybe 8 hours wasted here",
+  });
 });
 
 app.listen(PORT, () => {

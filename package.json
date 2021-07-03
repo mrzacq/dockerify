@@ -4,7 +4,7 @@
   "description": "learn how to build Dockerfile for image and docker-compose to manage container",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js -L"
   },
   "repository": {
     "type": "git",

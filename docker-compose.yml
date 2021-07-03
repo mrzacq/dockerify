@@ -1,12 +1,14 @@
 version: "3"
 services:
-  dockerify-app:
-    container_name: dockerify-app
-    restart: always
+  nodejs:
     build: .
+    command: npm run dev
+    container_name: dockerify-app
     volumes:
-      - ./:/app/
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "4000:4000"
+    restart: always
     expose: 
       - 4000
-    ports:
-      - 4000:4000
